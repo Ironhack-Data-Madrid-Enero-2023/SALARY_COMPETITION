@@ -50,7 +50,7 @@ http://www.kaggle.com/competitions/predict-salary-for-data-science-jobs)
 
 <br />
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <bn > 💁🏻‍♀️💁🏻  ORI Y JAVI LES DESEAMOS HAPPY MACHINE LEARNING WEEK  <bn />
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <bn > 💁🏻‍♀️💁🏻  ORI, YONA Y JAVI LES DESEAMOS HAPPY MACHINE LEARNING WEEK  <bn />
 
 <p align="center"> <img src="https://github.com/OrianAmpuero/Kaggle_Competition/blob/main/img/jijiji.gif" width="500" height="250">   </p>
 
