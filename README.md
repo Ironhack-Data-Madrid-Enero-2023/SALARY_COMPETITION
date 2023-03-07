@@ -1,56 +1,42 @@
-##      >>Competición de Kaggle para Bootcamp de Data ENERO'23:snake: semana 7 en [Ironhack](https://www.ironhack.com/)<<
+# SALARY_COMPETITION_Proyect
 
-<p align="center"> <img src="https://github.com/Ironhack-Data-Madrid-Enero-2023/SALARY_COMPETITION/blob/main/img/predict.jpg" width="700" height="350">  </p>
-
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  [¡¡¡QUE EMPIECE EL JUEGO!!!](
-http://www.kaggle.com/competitions/predict-salary-for-data-science-jobs)  
-
-## 📁ESTRUCTURA
-
--  DATA/     &emsp;&emsp;                    # contiene los csv  
-
--  IMG/     &emsp;&emsp;                     # contiene imagénes referentes al proyecto 
- 
--  PPTS/      &emsp;&emsp;                   # para cargar las presentaciones
-
--  .gitignore    &emsp;&emsp;                # archivo para ignorar documentos    
-
--  README.md  
+![elsdiners](https://github.com/Edupastore/SALARY_COMPETITION_ISSUE/blob/main/img/dineritus.jfif)
 
 
+## ⛓️ Índice de contenidos
 
-## 📚RECURSOS
+1.[✍️ Descripción del proyecto](#descripción)\
+2.[👀 Exploración y preparación de los datos (análisis y limpieza)](#limpieza)\
+3.[📈 Entrenamiento y testeo de modelos de Machine Learning](#traintest)\
+4.[⏫ Resultados: mejor modelo](#resultados)\
 
-- Salaries_data.csv (Datos para trabajar)
-- Testeo.csv (Datos para predecir)
-- Muestra.csv (Ejemplo de resultados que deben subir a Kaggle)
+## ✍️ Descripción
 
+Este proyecto trata sobre una competición en la plataforma Kaggle, cuya meta es predecir el salario de los trabajos de científicos de datos en USD. Para ello, exploraremos y limpiaremos unos datos contenidos en un fichero csv llamado "salaries_data", para después entrenar un modelo de Machine Learning y posteriormente testear y subir la muestra a Kaggle con el objetivo de reducir el RMSE (evaluamos el error) en el salario que tratamos de predecir.
 
-## 🔍INFO DE COLUMNAS 
-- *work_year:* The year the salary was paid.
-- *experience_level:* The experience level in the job during the year
-- *employment_type:* The type of employment for the role
-- *job_title:* The role worked in during the year.
-- *salary:* The total gross salary amount paid.
-- *salary_currency:* The currency of the salary paid as an ISO 4217 currency code.
-- *salaryinusd:* The salary in USD
-- *employee_residence:* Employee's primary country of residence in during the work year as an ISO 3166 country code.
-- *remote_ratio:* The overall amount of work done remotely
-- *company_location:* The country of the employer's main office or contracting branch
-- *company_size:* The median number of people that worked for the company during the year
+## 👀 Exploración y preparación de los datos (análisis y limpieza)
 
+Para limpiar los datos, hemos seguido los siguientes pasos:
 
-## 📈OBJECTIVO
+- Hemos explorado nuestro dataset para ver a qué nos enfrentábamos; hemos observado que no hay nulos.
+- Hemos prescindido de varias columnas al pensar que no tenían peso a la hora de poder predecir nuestra variable objetivo.
+- Hemos hecho una serie de transformaciones en varias columnas para homogeneizar los datos.
+- Las columnas categóricas las hemos transformado a númericas mediante get_dummies.
+- Hemos chequeado las correlaciones entre las distintas variables y nuestra variable objetivo.
+- Hemos comprobado que no había registros duplicados.
 
-- Preparar los datos para los diversos modelos (proceso empírico) 
-- Entrenar y Testear modelos de Machine Learning
-- Subir los resultados con el mejor modelo entrenado de Machine Learning
-- Hacer pull request con la presentación en la carpeta de 'PPTS' 
-- Crear repo propio del proyecto (issue)
+## 📈 Entrenamiento y testeo de modelos de Machine Learning
 
-<br />
+A continuación, hemos hecho un split para separar los datos en datos de entrenamiento y de testeo (tanto para nuestras X, que son las variables, como para la Y, que es nuestra variable objetivo, o sea, los salarios en USD).
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <bn > 💁🏻‍♀️💁🏻  ORI, YONA Y JAVI LES DESEAMOS HAPPY MACHINE LEARNING WEEK  <bn />
+Al entrenar los datos pasándole "lazy", hemos visto que el modelo que mejor se ajusta es el GammaRegressor; esto quiere decir que es el que nos devuelve menor error (RMSE) al hacer la predicción.
 
-<p align="center"> <img src="https://github.com/OrianAmpuero/Kaggle_Competition/blob/main/img/jijiji.gif" width="500" height="250">   </p>
+Para finalizar, hemos hecho el mismo proceso para la fase de testeo y hemos exportado los datos a un csv llamado salary_predict_usd que hemos subido a Kaggle.
 
+## ⏫ Resultados: mejor modelo
+
+Como hemos comentado en el epígrafe anterior, el modelo que mejor se ajusta a los datos con los que hemos trabajado es el GammaRegressor.
+
+Al subir el fichero a Kaggle, hemos visto que la puntuación que hemos obtenido es de 43118.12176 y el ranking público nos eleva a la décima posición:
+
+![posizione](https://github.com/Edupastore/SALARY_COMPETITION_ISSUE/blob/main/img/ranking.jpg)
