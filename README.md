@@ -1,56 +1,21 @@
-##      >>Competición de Kaggle para Bootcamp de Data ENERO'23:snake: semana 7 en [Ironhack](https://www.ironhack.com/)<<
+# Kaggle-project
+![portada](https://opendatascience.com/wp-content/uploads/2018/12/kaggle.png)
 
-<p align="center"> <img src="https://github.com/Ironhack-Data-Madrid-Enero-2023/SALARY_COMPETITION/blob/main/img/predict.jpg" width="700" height="350">  </p>
+## Salary Competition
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  [¡¡¡QUE EMPIECE EL JUEGO!!!](
-http://www.kaggle.com/competitions/predict-salary-for-data-science-jobs)  
+### Predicción de Salarios de Trabajos de Científicos de Datos en USD:
 
-## 📁ESTRUCTURA
+Competición amistosa de Kaggle sobre la predicción de salarios de trabajos de científicos de datos en USD. 
 
--  DATA/     &emsp;&emsp;                    # contiene los csv  
+### Análisis y Modelado Predictivo:
+En este proyecto, se deben aplicar las habilidades de análisis de datos y modelado predictivo para desarrollar un modelo de aprendizaje automático que pueda predecir con precisión el salario anual de un científico de datos en USD.
+Antes de aplicar los modelos de aprendizaje automático, se debe realizar una exploración y análisis de los datos para identificar patrones y tendencias. Luego, realizar una preprocesamiento de los datos, como la eliminación de valores nulos, la normalización de las variables numéricas y la codificación one-hot para variables categóricas.
 
--  IMG/     &emsp;&emsp;                     # contiene imagénes referentes al proyecto 
- 
--  PPTS/      &emsp;&emsp;                   # para cargar las presentaciones
+### Resultados:
+La evaluación utilizada en esta competición fue RMSE (Root Mean Square Error). El mejor modelo predictivo para este conjunto de datos será el ganador de la competición.
 
--  .gitignore    &emsp;&emsp;                # archivo para ignorar documentos    
-
--  README.md  
-
-
-
-## 📚RECURSOS
-
-- Salaries_data.csv (Datos para trabajar)
-- Testeo.csv (Datos para predecir)
-- Muestra.csv (Ejemplo de resultados que deben subir a Kaggle)
+### Conclusiones:
+Este proyecto permite aplicar habilidades de análisis de datos y modelado predictivo para desarrollar un modelo preciso de predicción de salarios de trabajos de científicos de datos en USD utilizando la evaluación RMSE.
 
 
-## 🔍INFO DE COLUMNAS 
-- *work_year:* The year the salary was paid.
-- *experience_level:* The experience level in the job during the year
-- *employment_type:* The type of employment for the role
-- *job_title:* The role worked in during the year.
-- *salary:* The total gross salary amount paid.
-- *salary_currency:* The currency of the salary paid as an ISO 4217 currency code.
-- *salaryinusd:* The salary in USD
-- *employee_residence:* Employee's primary country of residence in during the work year as an ISO 3166 country code.
-- *remote_ratio:* The overall amount of work done remotely
-- *company_location:* The country of the employer's main office or contracting branch
-- *company_size:* The median number of people that worked for the company during the year
-
-
-## 📈OBJECTIVO
-
-- Preparar los datos para los diversos modelos (proceso empírico) 
-- Entrenar y Testear modelos de Machine Learning
-- Subir los resultados con el mejor modelo entrenado de Machine Learning
-- Hacer pull request con la presentación en la carpeta de 'PPTS' 
-- Crear repo propio del proyecto (issue)
-
-<br />
-
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <bn > 💁🏻‍♀️💁🏻  ORI, YONA Y JAVI LES DESEAMOS HAPPY MACHINE LEARNING WEEK  <bn />
-
-<p align="center"> <img src="https://github.com/OrianAmpuero/Kaggle_Competition/blob/main/img/jijiji.gif" width="500" height="250">   </p>
-fin1
+![image](https://github.com/pgmar257/Kaggle-Project/blob/main/gif/Leonardo%20Dicaprio%20Throwing%20Money.gif)
