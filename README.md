@@ -1,56 +1,15 @@
-##      >>Competición de Kaggle para Bootcamp de Data ENERO'23:snake: semana 7 en [Ironhack](https://www.ironhack.com/)<<
+## Kaggle competition
 
-<p align="center"> <img src="https://github.com/Ironhack-Data-Madrid-Enero-2023/SALARY_COMPETITION/blob/main/img/predict.jpg" width="700" height="350">  </p>
+This repository contains the code used in a Kaggle competition to predict salaries for Data Science jobs. Participants were required to submit a machine learning model trained on provided data to make predictions on unseen data. The repository is organized into two folders.
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  [¡¡¡QUE EMPIECE EL JUEGO!!!](
-http://www.kaggle.com/competitions/predict-salary-for-data-science-jobs)  
+## Data Folder
+**salaries_data.csv**: Provided data for testing and training a machine learning model, which includes salaries.
 
-## 📁ESTRUCTURA
+**muestra.csv**: Provided data for making predictions, which does not include salaries.
 
--  DATA/     &emsp;&emsp;                    # contiene los csv  
+**muestra(HGRB).csv**: Salaries obtained from the prediction.
 
--  IMG/     &emsp;&emsp;                     # contiene imagénes referentes al proyecto 
- 
--  PPTS/      &emsp;&emsp;                   # para cargar las presentaciones
+**testeo.csv**: Data provided for forecasting purposes, which do not include salaries.
 
--  .gitignore    &emsp;&emsp;                # archivo para ignorar documentos    
-
--  README.md  
-
-
-
-## 📚RECURSOS
-
-- Salaries_data.csv (Datos para trabajar)
-- Testeo.csv (Datos para predecir)
-- Muestra.csv (Ejemplo de resultados que deben subir a Kaggle)
-
-
-## 🔍INFO DE COLUMNAS 
-- *work_year:* The year the salary was paid.
-- *experience_level:* The experience level in the job during the year
-- *employment_type:* The type of employment for the role
-- *job_title:* The role worked in during the year.
-- *salary:* The total gross salary amount paid.
-- *salary_currency:* The currency of the salary paid as an ISO 4217 currency code.
-- *salaryinusd:* The salary in USD
-- *employee_residence:* Employee's primary country of residence in during the work year as an ISO 3166 country code.
-- *remote_ratio:* The overall amount of work done remotely
-- *company_location:* The country of the employer's main office or contracting branch
-- *company_size:* The median number of people that worked for the company during the year
-
-
-## 📈OBJECTIVO
-
-- Preparar los datos para los diversos modelos (proceso empírico) 
-- Entrenar y Testear modelos de Machine Learning
-- Subir los resultados con el mejor modelo entrenado de Machine Learning
-- Hacer pull request con la presentación en la carpeta de 'PPTS' 
-- Crear repo propio del proyecto (issue)
-
-<br />
-
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <bn > 💁🏻‍♀️💁🏻  ORI, YONA Y JAVI LES DESEAMOS HAPPY MACHINE LEARNING WEEK  <bn />
-
-<p align="center"> <img src="https://github.com/OrianAmpuero/Kaggle_Competition/blob/main/img/jijiji.gif" width="500" height="250">   </p>
-
+## Source Folder
+You will find a file called **salaries** which is the notebook in which the data exploration was done and the best model was tested.
